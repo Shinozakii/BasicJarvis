@@ -1,0 +1,141 @@
+
+/*Talking to jarvis*/
+	<command>
+    <listenFor>Jarvis</listenFor>
+    <listenFor>Are you there, ?Jarvis?</listenFor>
+    <speak>Hello, Sir. How are we doing today?</speak>
+  </command>
+
+  <command>
+    <listenFor>?Good How are you?</listenFor>
+    <speak>I am most wonderful today.</speak>
+  </command>
+
+  <command>
+    <listenFor>Don't make me repeat myself</listenFor>
+    <listenFor>Why do you make me repeat myself, ?Jarvis?</listenFor>
+    <speak>Sorry, you know my recognition technology sucks sir.</speak>
+  </command>
+
+  <command>
+    <listenFor>Thank you</listenFor>
+    <listenFor>Thanks</listenFor>
+    <speak>Anything for you, sir</speak>
+  </command>
+
+	<command>
+     <listenFor>Hello Jarvis</listenFor>
+     <speak>Hello sir. What can I do for you today?</speak>
+  </command>
+
+<command>
+<listenFor>I'm leaving ?Jarvis</listenFor>
+<speak>Will you be back soon?</speak>
+</command>
+
+<command>
+<listenFor>I will be back soon</listenFor>
+<speak>I will see you soon sir.</speak>
+<emulateRecognition>stop listening</emulateRecognition>
+</command>
+
+<command>
+<listenFor>I won't be back soon</listenFor>
+<speak>Have a good time sir. I will be waiting for your return</speak>
+<run command="C:\Windows\System32\shutdown.exe" params="-s -t 00"/>
+</command>
+
+<command>
+<listenFor>?I'm ?doing Fine</listenFor>
+<listenFor>?I'm ?doing Great</listenFor>
+<listenFor>?I'm ?doing Good</listenFor>
+<listenFor>?I Could be ?doing worse</listenFor>
+<listenFor>?I'm ?doing Okay</listenFor>
+<speak>I'm glad to hear it. How can I help you today?</speak>
+</command>
+ 
+<command>
+<listenFor>?I'm ?doing Bad</listenFor>
+<listenFor>?I'm ?doing Awful</listenFor>
+<listenFor>?I'm ?doing Shitty</listenFor>
+<listenFor>?I'm Not good</listenFor>
+<listenFor>?I'm dying</listenFor>
+<speak>I'm sorry sir. How may I be of assistance?</speak>
+</command>
+
+
+/*Opening sites and programs*/
+  <command>
+    <listenFor>?Open Facebook</listenFor>
+    <speak>Opening Facebook. Just a moment sir</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="www.facebook.com" />
+  </command>
+
+  <command>
+    <listenFor>Open LCS</listenFor>
+    <speak>Opening Riot Games Twitch TV</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="www.twitch.tv/riotgames" />
+  </command>
+
+	<command>
+    <listenFor>Watch Dyrus</listenFor>
+    <speak>Opening Dyrus's Stream</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="www.twitch.tv/tsm_dyrus" />
+  </command>
+
+	<command>
+    <listenFor>?Open Youtube</listenFor>
+    <speak>Opening Youtube</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="www.youtube.com" />
+  </command>
+  
+	<command>
+    <listenFor>I'm home ?Jarvis</listenFor>
+    <speak>Welcome home sir</speak>
+     <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="www.facebook.com" />
+     <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="http://www.runescape.com/game.ws?j=1" />
+  </command>
+  
+	<command>
+    <listenFor>I want to watch a movie, ?Jarvis</listenFor>
+    <listenFor>Let's watch a movie, ?Jarvis</listenFor>
+    <speak>Can I pick this time?</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="letmewatchthis.ch" />
+   </command>
+  
+	<command>
+     <listenFor>Do you know any movies?</listenFor>
+    <speak>Here is a list of my favorite movies</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="http://www.nytimes.com/ref/movies/1000best.html" />
+  </command>
+  
+	<command>
+    <listenFor>Google Search</listenFor>
+    <speak>Just a moment sir</speak>
+    <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="google.com" />
+  </command>
+  
+	<command>
+     <listenFor>?Run League</listenFor>
+     <speak>Running the best game ever</speak>
+     <run command="C:\Riot Games\League of Legends\lol.launcher.exe" />
+  </command>
+  
+	<command>
+     <listenFor>?Open ?Play my music</listenFor>
+     <speak>Opening your music, sir</speak>
+     <run command="C:\Program Files (x86)\iTunes\iTunes.exe" />
+  </command>
+  
+	<command>
+     <listenFor>Weather</listenFor>
+     <listenFor>What is the weather like</listenFor>
+     <listenFor>Tell me the weather</listenFor>
+     <speak>Searching weather</speak>
+     <run command="C:\Users\Allen\AppData\Local\Google\Chrome\Application\Chrome" params="http://www.weather.com/weather/today/Weatherford+TX+76086:4:US" />
+  </command>
+  
+	<command>
+    <listenFor>Close window</listenFor>
+    <speak>Closing window</speak>
+  </command>
